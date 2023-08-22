@@ -1,0 +1,20 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+
+:Creation Map<Integer, Long> memo;
+if (Check if number <= 1) then (true)
+:Return number;
+else (false)
+if (Check if memo contains number) then (true)
+:Return memo number;
+else (false)
+:long fib = fibonacciDynamicMethod(n - 1) + fibonacciDynamicMethod(n - 2);
+:Save in memo number and fib;
+:Return fib;
+  endif
+endif
+stop
+
+@enduml

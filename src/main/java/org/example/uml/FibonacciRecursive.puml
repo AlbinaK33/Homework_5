@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+start
+
+if (Check if number <= 1?) then (true)
+  :Return number;
+else (false)
+:Return fibonacciRecursiveMethod(n-1) + fibonacciRecursiveMethod(n-2);
+  endif
+
+stop
+
+@enduml
